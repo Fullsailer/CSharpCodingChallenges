@@ -1,5 +1,8 @@
-﻿using System; 
-  
+﻿using System;
+//computes the largest subarray with contiguous elements.
+//Example.
+//Input:  arr[] = { 1, 56, 58, 57, 90, 92, 94, 98, 99, 93, 91, 45};
+//Output: Length of the longest contiguous subarray is 5  
 class longestContiguousSubarray
 {
 
@@ -31,11 +34,14 @@ class longestContiguousSubarray
     public static void Main()
     {
 
-        int[] arr = { 1, 56, 58, 57, 90, 92, 94, 93, 91, 45 };
+        //int[] arr = { 1, 56, 58, 57, 90, 92, 94, 93, 91, 45 }; //5
+        int[] arr = { 10, 12, 11 }; //3
+        //int[] arr = { 14, 12, 11, 20 }; //2
         int n = arr.Length;
 
         Console.WriteLine("Length of the longest"
                      + " contiguous subarray is "
                            + findLength(arr, n));
+        
     }
 }
